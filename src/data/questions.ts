@@ -1,0 +1,145 @@
+import { Question } from '@/types'
+
+export const questions: Question[] = [
+  // Inflammatory Patterns
+  {
+    id: 'q1',
+    pattern: 'spongiotic',
+    question: 'A biopsy shows widening of intercellular spaces in the epidermis with scattered eosinophils. Superficial perivascular lymphocytic infiltrate is present. What is the primary pattern?',
+    options: ['Spongiotic dermatitis', 'Psoriasiform dermatitis', 'Lichenoid dermatitis', 'Vesiculobullous disease'],
+    correct: 'Spongiotic dermatitis',
+    rationale: 'Widening of intercellular spaces (spongiosis) with eosinophils is classic for spongiotic dermatitis, often seen in allergic contact dermatitis.',
+    epidermal_clues: ['Intercellular edema', 'Eosinophils'],
+    dermal_clues: ['Superficial perivascular lymphocytes'],
+  },
+  {
+    id: 'q2',
+    pattern: 'psoriasiform',
+    question: 'A biopsy shows regular elongation of rete ridges with thinning of suprapapillary plates. Neutrophils are seen in the stratum corneum. What is the most likely diagnosis?',
+    options: ['Psoriasis', 'Chronic eczema', 'Lichen planus', 'Lupus erythematosus'],
+    correct: 'Psoriasis',
+    rationale: 'Regular acanthosis with thinned suprapapillary plates and neutrophils in stratum corneum (Munro microabscesses) are classic features of psoriasis.',
+    epidermal_clues: ['Regular acanthosis', 'Munro microabscesses'],
+    dermal_clues: ['Dilated capillaries'],
+  },
+  {
+    id: 'q3',
+    pattern: 'lichenoid',
+    question: 'A biopsy shows band-like lymphocytic infiltrate obscuring the dermal-epidermal junction with sawtooth rete ridges and hypergranulosis. What is the primary pattern?',
+    options: ['Lichenoid dermatitis', 'Spongiotic dermatitis', 'Psoriasiform dermatitis', 'Granulomatous dermatitis'],
+    correct: 'Lichenoid dermatitis',
+    rationale: 'Band-like lymphocytic infiltrate with sawtooth rete ridges and hypergranulosis is classic for lichen planus, a prototypical lichenoid dermatitis.',
+    epidermal_clues: ['Sawtooth rete ridges', 'Hypergranulosis'],
+    dermal_clues: ['Band-like lymphocytes'],
+  },
+  {
+    id: 'q4',
+    pattern: 'vesiculobullous',
+    question: 'A biopsy shows suprabasal acantholysis with tombstone basal cells. What is the most likely diagnosis?',
+    options: ['Pemphigus vulgaris', 'Bullous pemphigoid', 'Dermatitis herpetiformis', 'Pemphigus foliaceus'],
+    correct: 'Pemphigus vulgaris',
+    rationale: 'Suprabasal acantholysis with intact basal cells (tombstone appearance) is pathognomonic for pemphigus vulgaris.',
+    epidermal_clues: ['Suprabasal split', 'Acantholysis', 'Tombstone basal cells'],
+  },
+  {
+    id: 'q5',
+    pattern: 'granulomatous',
+    question: 'A biopsy shows well-formed granulomas with minimal surrounding lymphocytes in the dermis. Special stains are negative. What type of granuloma is this?',
+    options: ['Sarcoidal', 'Tuberculoid', 'Suppurative', 'Palisaded'],
+    correct: 'Sarcoidal',
+    rationale: 'Well-formed (naked) granulomas with minimal lymphocytic cuff are characteristic of sarcoidal granulomas.',
+    dermal_clues: ['Well-formed granulomas', 'Minimal lymphocytes'],
+  },
+
+  // Melanocytic Lesions
+  {
+    id: 'q6',
+    question: 'A melanocytic lesion shows asymmetry, lack of maturation, and pagetoid spread of melanocytes. Mitoses are present at the base. What is the most concerning diagnosis?',
+    options: ['Melanoma', 'Dysplastic nevus', 'Compound nevus', 'Spitz nevus'],
+    correct: 'Melanoma',
+    rationale: 'Asymmetry, lack of maturation, pagetoid spread, and deep mitoses are red flags for melanoma.',
+    epidermal_clues: ['Pagetoid spread', 'Asymmetry'],
+    dermal_clues: ['Lack of maturation', 'Deep mitoses'],
+  },
+  {
+    id: 'q7',
+    question: 'A melanocytic lesion shows shoulder phenomenon, lentiginous hyperplasia, and lamellar fibroplasia. Maturation is present. What is the diagnosis?',
+    options: ['Dysplastic nevus', 'Melanoma in situ', 'Compound nevus', 'Junctional nevus'],
+    correct: 'Dysplastic nevus',
+    rationale: 'Architectural disorder with shoulder phenomenon and lamellar fibroplasia, but with preserved maturation, suggests dysplastic nevus.',
+    epidermal_clues: ['Lentiginous hyperplasia', 'Shoulder phenomenon'],
+    dermal_clues: ['Lamellar fibroplasia', 'Maturation present'],
+  },
+  {
+    id: 'q8',
+    question: 'A dermal melanocytic lesion shows heavily pigmented dendritic cells in the mid-to-deep dermis with no junctional component. What is the diagnosis?',
+    options: ['Blue nevus', 'Dermal nevus', 'Melanoma', 'Spitz nevus'],
+    correct: 'Blue nevus',
+    rationale: 'Dendritic melanocytes in dermis without junctional component, heavily pigmented, is characteristic of blue nevus.',
+    dermal_clues: ['Dendritic melanocytes', 'Deep dermal location', 'Heavy pigmentation'],
+  },
+
+  // Keratinocytic Lesions
+  {
+    id: 'q9',
+    question: 'A lesion shows atypical keratinocytes in the lower epidermis with retained polarity. Parakeratosis overlies the atypical area. Solar elastosis is present. What is the diagnosis?',
+    options: ['Actinic keratosis', 'SCC in situ', 'Seborrheic keratosis', 'Lichen simplex chronicus'],
+    correct: 'Actinic keratosis',
+    rationale: 'Atypical keratinocytes confined to lower epidermis with retained polarity and solar elastosis is diagnostic of actinic keratosis.',
+    epidermal_clues: ['Lower epidermis atypia', 'Retained polarity', 'Parakeratosis'],
+    dermal_clues: ['Solar elastosis'],
+  },
+  {
+    id: 'q10',
+    question: 'A lesion shows nests of basaloid cells with peripheral palisading and retraction artifact. What is the diagnosis?',
+    options: ['Basal cell carcinoma', 'Trichoepithelioma', 'Squamous cell carcinoma', 'Sebaceous carcinoma'],
+    correct: 'Basal cell carcinoma',
+    rationale: 'Peripheral palisading combined with retraction artifact is highly characteristic of basal cell carcinoma.',
+    dermal_clues: ['Basaloid nests', 'Peripheral palisading', 'Retraction artifact'],
+  },
+
+  // Soft Tissue
+  {
+    id: 'q11',
+    question: 'A dermal spindle cell lesion shows storiform pattern, epidermal hyperplasia, and is CD34 negative. What is the diagnosis?',
+    options: ['Dermatofibroma', 'DFSP', 'Melanoma', 'Leiomyoma'],
+    correct: 'Dermatofibroma',
+    rationale: 'Storiform pattern with epidermal hyperplasia (dirty feet) and CD34 negativity is diagnostic of dermatofibroma.',
+    dermal_clues: ['Storiform pattern', 'CD34 negative'],
+    epidermal_clues: ['Epidermal hyperplasia'],
+  },
+  {
+    id: 'q12',
+    question: 'A spindle cell lesion infiltrates subcutis in honeycomb pattern and is diffusely CD34 positive. What is the diagnosis?',
+    options: ['DFSP', 'Dermatofibroma', 'Leiomyosarcoma', 'Melanoma'],
+    correct: 'DFSP',
+    rationale: 'Honeycomb infiltration of subcutis with diffuse CD34 positivity is diagnostic of dermatofibrosarcoma protuberans (DFSP).',
+    dermal_clues: ['Honeycomb subcutis infiltration', 'CD34 positive', 'Storiform pattern'],
+  },
+
+  // DIF
+  {
+    id: 'q13',
+    question: 'DIF shows intercellular IgG in a fishnet pattern throughout the epidermis. What is the most likely diagnosis?',
+    options: ['Pemphigus vulgaris', 'Bullous pemphigoid', 'Dermatitis herpetiformis', 'Lupus erythematosus'],
+    correct: 'Pemphigus vulgaris',
+    rationale: 'Intercellular IgG in fishnet pattern is diagnostic of pemphigus. Full-thickness pattern suggests pemphigus vulgaris.',
+    dif: 'Intercellular IgG',
+  },
+  {
+    id: 'q14',
+    question: 'DIF shows granular IgA deposits at the tips of dermal papillae. What is the diagnosis?',
+    options: ['Dermatitis herpetiformis', 'Linear IgA disease', 'Bullous pemphigoid', 'Pemphigus'],
+    correct: 'Dermatitis herpetiformis',
+    rationale: 'Granular IgA at dermal papillary tips is pathognomonic for dermatitis herpetiformis.',
+    dif: 'Granular IgA at papillary tips',
+  },
+  {
+    id: 'q15',
+    question: 'DIF shows linear IgG and C3 along the basement membrane zone. What is the differential diagnosis?',
+    options: ['BP, MMP, or EBA', 'Pemphigus variants', 'Dermatitis herpetiformis', 'Linear IgA disease'],
+    correct: 'BP, MMP, or EBA',
+    rationale: 'Linear IgG at BMZ can be seen in bullous pemphigoid, mucous membrane pemphigoid, or epidermolysis bullosa acquisita. Further workup (salt-split, serology) needed to distinguish.',
+    dif: 'Linear IgG and C3 at BMZ',
+  },
+]
